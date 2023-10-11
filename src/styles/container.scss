@@ -1,0 +1,13 @@
+.container {
+	border: solid red 2px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+	align-content: stretch;
+}
+
+img {
+	width: 30%;
+}
