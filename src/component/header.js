@@ -1,21 +1,21 @@
-import '../styles/style.scss'
-import image from'../assets/banner.png'
+import "../styles/style.scss";
+import image from "../assets/banner.png";
+import logo from "../assets/logo.svg";
 
 function Header() {
 	return (
 		<div>
 			<div className="nav">
-				<h1>LOGO KASA</h1>
-				<div className="menu">
+				<img src={logo} alt="{logo.name}" />
+				
 					<ul>
 						<li>Accueil</li>
 						<li>A propos</li>
 					</ul>
-				</div>
-            </div>
-            <img src={image} alt="Logo" />;
-        </div>
-		
+				
+			</div>
+			<img src={image} alt="" />;
+		</div>
 	);
 }
 
