@@ -2,6 +2,8 @@ import React from "react";
 import products from "../data/products.json";
 import '../styles/container.scss';
 
+
+
 function ProductList() {
 	return (
 		<div className="container">
