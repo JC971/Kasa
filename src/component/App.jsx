@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React from "react";
 import Header from "./header";
-import HomePage from "../pages/HomePage"; // Adjust the import path
-import AboutPage from "../pages/AboutPage"; // Adjust the import path
+import HomePage from "../pages/HomePage"; 
+import AboutPage from "../pages/AboutPage"; 
+
 
 function App() {
 	return (
@@ -12,6 +13,9 @@ function App() {
 				<Route path="/" element={<HomePage />} />
 				<Route path="/about" element={<AboutPage />} />
 			</Routes>
+            
+           
+            
 		</Router>
 	);
 }

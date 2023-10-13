@@ -11,7 +11,7 @@ function ProductList() {
 				<div key={apartment.id}>
 					<h2>{apartment.title}</h2>
 					<img src={apartment.cover} alt={apartment.title} />
-					<p>{apartment.description}</p>
+					<p>{apartment.description}</p> 
 					<p>Lieu : {apartment.location}</p>
 					<div>
 						<h3>Hôte : {apartment.host.name}</h3>
