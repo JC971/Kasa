@@ -1,8 +1,9 @@
-import "../styles/style.scss";
+import "../styles/header.scss";
 import image from "../assets/banner.png";
 import logo from "../assets/logo.svg";
 import { Link, useLocation } from 'react-router-dom';
-import newImage from '../assets/banner2.jpg'
+import newImage from '../assets/banner2.jpg';
+
 
 function Header() {
 	const location = useLocation()
@@ -23,11 +24,13 @@ function Header() {
 					</li>
 				</ul>
 			</div>
-			<div className="image-container">
-				<img className="header-banner" src={displayImage} alt="banner" />
 
-				<div className="textImage">Chez vous, partout et ailleurs</div>
-			</div>
+			{!location.pathname.startsWith("/apartment/") && (
+				<div className="image-container">
+					<img className="header-banner" src={displayImage} alt="banner" />
+					<div className="textImage">Chez vous, partout et ailleurs</div>
+				</div>
+			)}
 		</div>
 	);
 }

@@ -5,6 +5,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 }
 
+
 .nav {
 	display: flex;
 	flex-direction: row;
@@ -13,6 +14,15 @@ body {
 	align-items: center;
 	align-content: stretch;
 	margin-top: 20px;
+
+	a{
+		text-decoration: none;
+		
+	}
+
+	a:hover{
+		text-decoration-line: underline;
+	}
 
 	ul {
 		color: red;
