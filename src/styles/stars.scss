@@ -1,0 +1,19 @@
+.stars-container {
+    display: flex;
+}
+
+.star {
+    font-size: 24px; 
+    color: gray; 
+}
+
+.star.filled {
+    color: #ff6060;
+	
+
+}
+
+.stars-container{
+    grid-row: 3;
+    grid-column: 12;
+}

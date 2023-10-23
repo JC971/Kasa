@@ -9,9 +9,10 @@ function Header() {
 	const location = useLocation()
 
 	
-	const displayImage = location.pathname === "/about" ? newImage : image;
+	const displayImage = location.pathname === "/About" ? newImage : image;
 
 	return (
+		
 		<div>
 			<div className="nav">
 				<img src={logo} alt="{logo.name}" />
@@ -20,7 +21,7 @@ function Header() {
 						<Link to="/">Accueil</Link>
 					</li>
 					<li>
-						<Link to="/about">À propos de</Link>
+						<Link to="/About">À propos de</Link>
 					</li>
 				</ul>
 			</div>
