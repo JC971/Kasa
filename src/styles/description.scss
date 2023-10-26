@@ -1,108 +1,165 @@
 .description {
-	display: grid;
-	grid-template-rows: 1fr, 1fr 1fr, 1fr;
+	margin-bottom:40px;
+	width: 1240px;
+	margin-right: auto;
+	margin-left: auto;
 
-	img {
+
+	.description-image img {
 		width: 100%;
 		height: 415px;
 		object-fit: cover;
-		border-radius: 15px;
-	}
-}
-
-.localisation {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	padding: 20px 0;
-	align-items: center;
-
-	button {
-		background-color: #ff6060;
-		border-radius: 5px;
-		width: 115px;
-		height: 25px;
-		margin: 0 5px;
-		border: none;
-		grid-row: 3;
-		margin-top: 15px;
-		margin-bottom: 15px;
+		border-radius: 20px;
+		margin-top: 40px;
+		margin-bottom: 20px;
 	}
 
-	.equipement {
-		grid-row: 4;
-		grid-column: 8 / span 12;
-		width: 582px;
-		height: 40px;
+	.localisation {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: auto 30px 70px repeat(2, auto);
 		align-items: center;
-		position: relative;
+
+		h2 {
+			color: #ff6060;
+			font-size: 36px;
+			font-weight: 500;
+			grid-column: 1/10;
+			grid-row: 1;
+			margin: 0;
+		}
+
+		h3 {
+			color: #ff6060;
+			font-size: 18px;
+			font-weight: 500;
+			text-align: right;
+			white-space: normal;
+			max-width: 50px;
+			grid-column: 12;
+			grid-row: 1;
+			justify-self: end;
+			margin-right: 100px;
+		}
+
+		p {
+			color: #ff6060;
+			font-weight: 500;
+			grid-row: 2;
+			grid-column: 1 / span 3;
+			margin: 0;
+		}
+
+		.host-image {
+			display: grid;
+			grid-column-start: 12;
+			grid-column-end: 12;
+			grid-row: 1;
+
+			img {
+				border-radius: 50%;
+				width: 60px;
+				height: 60px;
+				object-fit: cover;
+				justify-self: end;
+			}
+		}
+
+		.button-container {
+			grid-auto-flow: column;
+			display: grid;
+			width: 480px;
+			grid-row: 3;
+	
+			.button-top {
+				background-color: #ff6060;
+				border: none;
+				border-radius: 10px;
+				height: 25px;
+				gap: 10px;
+				width: 115px;
+				align-items: center;
+				font-size: 14px;
+				color: white;
+			}
+		}
+
+		.descriptionBtn,
+		.equipementBtn {
+			background-color: #ff6060;
+			text-align: left;
+			border-radius: 10px;
+			height: 52px;
+			width: 582px;
+			font-size: 18px;
+			font-weight: 500;
+			color: white;
+			position: relative;
+			align-items: center;
+			border: none;
+			
+		}
+		.descriptionBtn {
+			display: grid;
+			grid-row: 4;
+			grid-column-start: 1;
+		}
+		.equipementBtn {
+			grid-row: 4;
+			display: grid;
+			grid-column-end: 13;
+		}
+
+		.description-text {
+			display: grid;
+			grid-row: 5;
+			grid-column-start: 1;
+			grid-column-end: 1;
+			font-weight: 500;
+			background-color: #f6f6f6;
+			height: 300px;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			padding-top: 20px;
+			margin-top: 0;
+		}
+
+		.equipments-list {
+			color: #ff6060;
+			font-weight: 500;
+			display: grid;
+			grid-row: 5;
+			grid-column: 12;
+			list-style-type: none;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left: 20px;
+			align-items: start;
+			background-color: #f6f6f6;
+			margin-top: 0;
+			height: 300px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+
+		
+		}
+		
+
+
+		.icon {
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+			transition: transform 0.5s ease;
+		}
+
+		.icon.rotated {
+			transform: translateY(-50%) rotate(180deg);
+		}
 	}
-	.equipement::after {
-		content: "\2303";
-		position: absolute;
-		right: 10px;
-		top: calc(50% + 12px);
-		transform: translateY(-50%) scale(1.5);
-		font-size: 24px;
-	}
-
-	.description {
-		grid-row: 4;
-		grid-column: 1;
-		grid-column: 1 / span 8;
-		width: 582px;
-		height: 40px;
-		align-items: center;
-		position: relative;
-	}
-	.description::after {
-		content: "\2303";
-		position: absolute;
-		right: 10px;
-		top: calc(50% + 12px);
-		transform: translateY(-50%) scale(1.5);
-		font-size: 24px;
-	}
 }
 
-.title-host-container {
-	display: grid;
-}
 
-.host-image {
-	text-align: right;
-	padding-right: 5px;
-}
-
-.host-image img {
-	width: 70px;
-	height: 70px;
-	object-fit: cover;
-	border-radius: 50%;
-}
-h3 {
-	font-size: 18px;
-	font-weight: 500;
-
-	white-space: normal;
-	text-align: right;
-}
-h2,
-h3,
-p {
-	color: #ff6060;
-	font-weight: 500;
-	margin: 0;
-}
-
-h2 {
-	font-size: 36px;
-	font-weight: 500;
-	grid-column: 1/10;
-	grid-row: 1;
-	margin: 0;
-}
-
-p {
-	grid-row: 2;
-	grid-column: 1 / span 3;
-}

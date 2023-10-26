@@ -1,5 +1,18 @@
-.stars-container {
-    display: flex;
+	.stars-container {
+		grid-row: 3;
+		grid-column: 12;
+		
+	}
+	.stars-container {
+    flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	gap: 6px;
+	
+	
 }
 
 .star {
@@ -13,7 +26,3 @@
 
 }
 
-.stars-container{
-    grid-row: 3;
-    grid-column: 12;
-}

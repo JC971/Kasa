@@ -1,0 +1,45 @@
+$button-color: #ff6060;
+$back-color: #f6f6f6;
+
+@mixin button-styles {
+  background-color: $button-color;
+  width: 1023px;
+  height: 52px;
+  color: white;
+  font-size: 24px;
+  border: none;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  position: relative;
+ 
+ 
+}
+
+.about{
+    display: grid;
+
+    gap: 10px;
+    padding-bottom: 10px;
+
+
+
+button {
+	@include button-styles;
+	
+}
+
+	.icon {
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+             transition: transform 0.5s ease;
+		}
+
+		.icon.rotated {
+			transform: translateY(-50%) rotate(180deg);
+		}
+   
+}

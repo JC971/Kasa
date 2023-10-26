@@ -13,7 +13,8 @@ function Header() {
 
 	return (
 		
-		<div>
+		<div className="nav-container" >
+			<div className="header-container"> 
 			<div className="nav">
 				<img src={logo} alt="{logo.name}" />
 				<ul>
@@ -21,7 +22,7 @@ function Header() {
 						<Link to="/">Accueil</Link>
 					</li>
 					<li>
-						<Link to="/About">À propos de</Link>
+						<Link to="/About">À propos</Link>
 					</li>
 				</ul>
 			</div>
@@ -31,7 +32,9 @@ function Header() {
 					<img className="header-banner" src={displayImage} alt="banner" />
 					<div className="textImage">Chez vous, partout et ailleurs</div>
 				</div>
+
 			)}
+		</div>
 		</div>
 	);
 }
