@@ -76,10 +76,12 @@
 				border-radius: 10px;
 				height: 25px;
 				gap: 10px;
-				width: 115px;
+				
 				align-items: center;
 				font-size: 14px;
 				color: white;
+				display: inline;
+				width: fit-content;
 			}
 		}
 
