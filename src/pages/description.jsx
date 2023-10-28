@@ -47,8 +47,11 @@ const Description = () => {
 							<FontAwesomeIcon icon={faChevronUp} />
 						</span>
 					</button>
+					{/*<div className="description-texte"> </div>*/}
 					{showDescription && (
-						<div className="description-text">{apartment.description}</div>
+						<div className="description-text">
+							{apartment.description}
+						</div>
 					)}
 
 					<button
