@@ -13,12 +13,10 @@ body {
 
 .nav-container {
 	
-	width: 1440px;
-
-
+	
 	.header-container{
 		
-		max-width: 1240px;
+		max-width: 86%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -70,7 +68,7 @@ body {
 	.image-container {
 		position: relative;
 		display: flex;
-		max-width: 1240px;
+		max-width: 100%;
 	}
 
 	.textImage {

@@ -48,7 +48,7 @@ const Description = () => {
 						</span>
 					</button>
 					{showDescription && (
-						<p className="description-text">{apartment.description}</p>
+						<div className="description-text">{apartment.description}</div>
 					)}
 
 					<button

@@ -1,0 +1,31 @@
+/*
+.slider-container {
+    position: relative;
+    max-width: 600px;
+    background-color: red;
+
+    .chevron-icon {
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+
+        &.left {
+            left: 10px;
+        }
+
+        &.right {
+            right: 10px;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+*/
+.Carousel{
+width: 600px;
+height: 400px;
+border: solid red 5px;
+}

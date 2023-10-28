@@ -2,44 +2,66 @@ $button-color: #ff6060;
 $back-color: #f6f6f6;
 
 @mixin button-styles {
-  background-color: $button-color;
-  width: 1023px;
-  height: 52px;
-  color: white;
-  font-size: 24px;
-  border: none;
-  text-align: left;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 5px;
-  position: relative;
- 
- 
+	background-color: $button-color;
+	width: 1023px;
+	height: 52px;
+	color: white;
+	font-size: 24px;
+	border: none;
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 5px;
+	position: relative;
+	padding: 1px 10px;
 }
 
-.about{
-    display: grid;
+.about {
+	display: flex;
+	gap: 10px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+	padding-bottom: 10px;
+	align-items: center;
+	width: 86%;
+	margin-left: auto;
+	margin-right: auto;
 
-    gap: 10px;
-    padding-bottom: 10px;
+	.button-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		width: 86%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.texteBtn {
+		text-align-last: left;
+		padding-left: 40px;
+		background-color: $back-color;
+		width: 100%;
+    margin: 0 20px;
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+	}
 
-
-
-button {
-	@include button-styles;
-	
-}
+	button {
+		@include button-styles;
+	}
 
 	.icon {
-			position: absolute;
-			right: 10px;
-			top: 50%;
-			transform: translateY(-50%);
-             transition: transform 0.5s ease;
-		}
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: transform 0.5s ease;
+	}
 
-		.icon.rotated {
-			transform: translateY(-50%) rotate(180deg);
-		}
-   
+	.icon.rotated {
+		transform: translateY(-50%) rotate(180deg);
+	}
 }
