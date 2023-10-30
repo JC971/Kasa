@@ -18,12 +18,10 @@ function App() {
 				<Route path="/apartment/:id" element={<Description />} />
 				<Route path="/apartment/:id/detail" element={<DetailAppartement />} />
 			</Routes>
-			
+
 			<Footer />
 		</Router>
 	);
 }
 
 export default App;
-
-
