@@ -8,6 +8,7 @@ import Footer from "./footer";
 import DetailAppartement from "./DetailApp";
 
 
+
 function App() {
 	return (
 		<Router>

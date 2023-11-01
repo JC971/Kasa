@@ -1,4 +1,4 @@
-/*
+
 import React from "react";
 import Slider from "./Slider.jsx";
 import products from "../data/products.json";
@@ -18,4 +18,3 @@ function DetailAppartement() {
 }
 
 export default DetailAppartement;
-*/
