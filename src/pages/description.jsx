@@ -192,7 +192,7 @@ const Description = () => {
             <span className={`icon ${showEquipments ? "rotated" : ""}`}>
               <FontAwesomeIcon icon={faChevronUp} />
             </span>
-            console.log(FontAwesomeIcon)
+            
           </button>
           {showEquipments && (
             <ul className="equipments-list">
