@@ -13,7 +13,6 @@
 		background: #f6f6f6;
 		border-radius: 10px;
 		max-width: 86%;
-		
 
 		.card {
 			display: flex;
@@ -50,5 +49,11 @@
 			margin: 40px 0;
 			max-width: 60%;
 		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.prod .container .card {
+		width: 40%;
 	}
 }
