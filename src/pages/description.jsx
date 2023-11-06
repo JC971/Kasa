@@ -13,7 +13,7 @@ const Description = () => {
 	const [showEquipments, setShowEquipments] = useState(false);
 	const [showDescription, setShowDescription] = useState(false);
 
-	//Image actuelle home
+	//Image actuelle de home
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
 	if (!apartment) return <p>apartment not found </p>;
