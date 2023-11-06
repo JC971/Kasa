@@ -9,6 +9,7 @@ import DetailAppartement from "./DetailApp";
 
 
 
+
 function App() {
 	return (
 		<Router>
@@ -18,6 +19,7 @@ function App() {
 				<Route path="/about" element={<AboutPage />} />
 				<Route path="/apartment/:id" element={<Description />} />
 				<Route path="/apartment/:id/detail" element={<DetailAppartement />} />
+				
 			</Routes>
 
 			<Footer />

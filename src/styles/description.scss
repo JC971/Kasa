@@ -1,8 +1,19 @@
-.description {
-	margin-bottom: 40px;
-	width: 1240px;
-	margin-right: auto;
+.description-container {
+	max-width: 1240px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
 	margin-left: auto;
+	margin-right: auto;
+
+	.description {
+		margin-bottom: 40px;
+		display: flex;
+		flex-direction: column;
+	}
 
 	.description-image img {
 		width: 100%;
@@ -76,7 +87,7 @@
 				border-radius: 10px;
 				height: 25px;
 				gap: 10px;
-				
+
 				align-items: center;
 				font-size: 14px;
 				color: white;
@@ -120,7 +131,6 @@
 			height: 100%;
 			align-items: start;
 			color: #ff6060;
-			
 		}
 
 		.description-text {
@@ -129,7 +139,6 @@
 			grid-column-start: 1;
 			grid-column-end: 1;
 			line-height: 32px;
-			
 		}
 
 		.equipments-list {

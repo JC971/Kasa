@@ -1,3 +1,4 @@
+
 import "../styles/header.scss";
 import image from "../assets/banner.png";
 import logo from "../assets/logo.svg";
@@ -7,13 +8,16 @@ import newImage from "../assets/banner2.jpg";
 function Header() {
 	const location = useLocation();
 
+
 	const displayImage = location.pathname === "/About" ? newImage : image;
 
 	return (
 		<div className="nav-container">
 			<div className="header-container">
 				<div className="nav">
-					<img src={logo} alt="{logo.name}" />
+					<div className="entoure">
+						<img src={logo} alt="{logo.name}" />
+					</div>
 					<ul>
 						<li>
 							<Link to="/">Accueil</Link>
@@ -36,3 +40,5 @@ function Header() {
 }
 
 export default Header;
+
+
