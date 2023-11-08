@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import products from "../data/products.json";
-import { useParams, Navigate } from "react-router-dom";
+import { useParams} from "react-router-dom";
 import "../styles/description.scss";
 import RatingStars from "../component/Stars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -72,40 +72,42 @@ const Description = () => {
 						</div>
 						<RatingStars rating={apartment.rating} />
 
-						<button
-							className={`descriptionBtn`}
-							onClick={() => setShowDescription(!showDescription)}
-						>
-							Description
-							<span className={`icon ${showDescription ? "rotated" : ""}`}>
-								<FontAwesomeIcon icon={faChevronUp} />
-							</span>
-						</button>
+						
+							<button
+								className={`descriptionBtn`}
+								onClick={() => setShowDescription(!showDescription)}
+							>
+								Description
+								<span className={`icon ${showDescription ? "rotated" : ""}`}>
+									<FontAwesomeIcon icon={faChevronUp} />
+								</span>
+							</button>
 
-						{showDescription && (
-							<div className="description-text">{apartment.description}</div>
-						)}
+							{showDescription && (
+								<div className="description-text">{apartment.description}</div>
+							)}
 
-						<button
-							className={`equipementBtn `}
-							onClick={() => setShowEquipments(!showEquipments)}
-						>
-							Equipement
-							<span className={`icon ${showEquipments ? "rotated" : ""}`}>
-								<FontAwesomeIcon icon={faChevronUp} />
-							</span>
-						</button>
-						{showEquipments && (
-							<ul className="equipments-list">
-								{apartment.equipments.map((equipment, index) => (
-									<li key={index}>{equipment}</li>
-								))}
-							</ul>
-						)}
+							<button
+								className={`equipementBtn `}
+								onClick={() => setShowEquipments(!showEquipments)}
+							>
+								Equipement
+								<span className={`icon ${showEquipments ? "rotated" : ""}`}>
+									<FontAwesomeIcon icon={faChevronUp} />
+								</span>
+							</button>
+							{showEquipments && (
+								<ul className="equipments-list">
+									{apartment.equipments.map((equipment, index) => (
+										<li key={index}>{equipment}</li>
+									))}
+								</ul>
+							)}
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+	
 	);
 };
 
