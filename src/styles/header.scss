@@ -97,10 +97,17 @@ body {
 @media screen and (max-width: 678px) {
 	.entoure img {
 		width: 100px;
+		
 		.nav a {
 			font-size: 20px;
 		}
+		.image-container{
+			border: red solid 2px;
+		}
+				
 	}
+
+
 	@media screen and (max-width: 505px) {
 		.entoure img {
 			width: 80px;
@@ -113,7 +120,17 @@ body {
 			padding-right: 5px;
 			padding-left: 5px;
 		}
+		.description-container .image-container{
+		border: solid red 2px;
+		
+		}
+		.description-container .description-image img{
+			border: solid blue 2px;
+			height: 100px;
+			
+		}
 	}
+}
 
 	@media screen and (max-width: 375px) {
 		.entoure img {
@@ -134,4 +151,4 @@ body {
 			height: 111px;
 		}
 	}
-}
+
