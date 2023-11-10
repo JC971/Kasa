@@ -4,14 +4,15 @@ $back-color: #f6f6f6;
 @mixin button-styles {
 	background-color: $button-color;
 	width: 100%;
-	height: 52px;
+	//height: 52px;
 	color: white;
 	font-size: 24px;
 	border: none;
 	text-align: left;
 	border-radius: 5px;
 	position: relative;
-	padding: 1px 10px;
+	padding: 20px 0;
+	
 }
 
 .about {
@@ -47,6 +48,7 @@ $back-color: #f6f6f6;
 
 	button {
 		@include button-styles;
+		border: solid blue 10px;
 	}
 
 	.icon {
@@ -59,5 +61,16 @@ $back-color: #f6f6f6;
 
 	.icon.rotated {
 		transform: translateY(-50%) rotate(180deg);
+	}
+
+	
+
+	
+
+}
+
+@media screen and (max-width: 375) {
+	button{
+		padding: 0;
 	}
 }

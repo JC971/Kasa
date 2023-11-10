@@ -154,7 +154,7 @@
 			grid-row: 4;
 			display: grid;
 			grid-column: 3/4;
-			justify-self: end;
+			//justify-self: end;
 		}
 
 		.description-text,
@@ -342,9 +342,11 @@
 	@media screen and (max-width: 800px) {
 		.localisation {
 			grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+			border: solid red 5px;
 		}
 		.localisation .descriptionBtn {
 			grid-column: 1/7;
+			
 		}
 		.localisation .description-text{
 			grid-column: 1/7;
@@ -382,6 +384,8 @@
 		}
 	}
 	/////////////////////////////////////////////////////
+	///
+	
 	@media screen and (max-width: 755px) {
 		.localisation {
 			grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
