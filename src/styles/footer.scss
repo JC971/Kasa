@@ -18,6 +18,12 @@
 		align-content: stretch;
 		gap: 30px;
 	}
+
+	.smallRights-image{
+		display: none;
+	}
+
+
 }
 
 @media screen and (max-width: 560px) {
@@ -36,7 +42,25 @@
 		margin-right: auto;
 		margin-left: auto;
 		border-radius: 3px 3px;
+		
 	}
+
+
+
+.footer-container .allRights{
+	display: none;
+	
+}
+.footer-container .footLogo{
+	
+}
+
+
+
+
+.footer-container .smallRights-image{
+	display: block;
+}
 
 	
 }

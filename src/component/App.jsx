@@ -16,10 +16,10 @@ function App() {
 			<Header />
 			<Routes>
 				<Route path="/" element={<HomePage />} />
-				<Route path="/about" element={<AboutPage />} />
+				<Route path="/about" element={<AboutPage />} />*/
+				
 				<Route path="/apartment/:id" element={<Description />} />
 				<Route path="/apartment/:id/detail" element={<DetailAppartement />} />
-				
 			</Routes>
 
 			<Footer />

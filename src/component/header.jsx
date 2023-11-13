@@ -31,7 +31,9 @@ function Header() {
 				{!location.pathname.startsWith("/apartment/") && (
 					<div className="image-container">
 						<img className="header-banner" src={displayImage} alt="banner" />
-						<div className="textImage">Chez vous, partout et ailleurs</div>
+						{location.pathname === "/" && (
+							<div className="textImage">Chez vous, partout et ailleurs</div>
+						)}
 					</div>
 				)}
 			</div>
