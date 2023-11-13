@@ -1,0 +1,60 @@
+.not-found {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	color: #ff6060;
+
+	.erreur-page {
+		font-weight: 700;
+		font-size: 288px;
+		margin: 90px 0;
+	}
+	.oops {
+		font-weight: 500;
+		font-size: 36px;
+		margin: 0 0 90px 0;
+	}
+	.broken-link {
+		margin: 0 0 90px 0;
+	}
+	.broken-link a {
+		color: #ff6060;
+		font-weight: 500;
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 768px) {
+    .not-found .erreur-page {
+		font-weight: 700;
+		font-size: 250px;
+		margin: 90px 0;
+	}
+    .not-found .oops {
+		font-size: 28px;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 425px) {
+    .not-found .erreur-page {
+		font-weight: 700;
+		font-size: 100px;
+		margin: 90px 0;
+	}
+    .not-found .oops {
+		font-size: 28px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.not-found .erreur-page {
+		font-size: 96px;
+	}
+	.not-found .oops {
+		font-size: 18px;
+		text-align: center;
+	}
+}

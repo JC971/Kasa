@@ -1,26 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo.svg";
 import "../styles/oops.scss";
 
-const OpsHeader = () => {
+const ApartmentNotFound = () => {
 	return (
-		<header className="nav">
-			<Link to="/">
-				<img src={Logo} alt="logo kasa" />
-			</Link>
-			
-				<ul>
-					<li>
-						<Link to="/">Accueil</Link>
-					</li>
-					<li>
-						<Link to="/about">À propos</Link>
-					</li>
-				</ul>
-			
-		</header>
+		<div className="not-found">
+			<div className="erreur-page">
+				404
+			</div>
+			<div className="oops">
+				Oups! la page que vous demandez n'existe pas.
+			</div>
+			<div className="broken-link">
+				<Link to="/">Retouner à la page d'accueil</Link>
+			</div>
+		</div>
 	);
 };
 
-export default OpsHeader;
+export default ApartmentNotFound;

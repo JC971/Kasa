@@ -6,6 +6,7 @@ import RatingStars from "../component/Stars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import ChevronIcon from "../component/ChevronIcon";
+import ApartmentNotFound from "../component/OpsHeader";
 
 const Description = () => {
 	const { id } = useParams();
@@ -16,7 +17,7 @@ const Description = () => {
 	//Image actuelle de home
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-	if (!apartment) return <p>apartment not found </p>;
+	if (!apartment) return <ApartmentNotFound/>;
 
 	// Image précédente
 	const handlePreviousImage = () => {

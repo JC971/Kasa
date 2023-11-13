@@ -1,28 +1,18 @@
-	.stars-container {
-		grid-row: 3;
-		grid-column: 12;
-		
-	}
-	.stars-container {
-    flex-direction: row;
+.stars-container {
+	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: flex-end;
 	align-items: center;
 	align-content: stretch;
 	display: flex;
 	gap: 6px;
-	
-	
+
+	.star {
+		font-size: 24px;
+		color: gray;
+	}
+
+	.star.filled {
+		color: #ff6060;
+	}
 }
-
-.star {
-    font-size: 24px; 
-    color: gray; 
-}
-
-.star.filled {
-    color: #ff6060;
-	
-
-}
-
