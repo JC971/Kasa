@@ -1,15 +1,11 @@
-import ProductList from "../component/products"
+import ProductList from "../component/products";
 
 function HomePage() {
-    return (
-        <div className="prod">
-            <ProductList/>
-        </div>
-    )
-       
-   
-    
-  
+	return (
+		<div className="prod">
+			<ProductList />
+		</div>
+	);
 }
 
-export default HomePage
+export default HomePage;

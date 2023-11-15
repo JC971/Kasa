@@ -5,10 +5,6 @@ import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
 import Description from "../pages/description";
 import Footer from "./footer";
-import DetailAppartement from "./DetailApp";
-
-
-
 
 function App() {
 	return (
@@ -16,10 +12,8 @@ function App() {
 			<Header />
 			<Routes>
 				<Route path="/" element={<HomePage />} />
-				<Route path="/about" element={<AboutPage />} />*/
-				
+				<Route path="/about" element={<AboutPage />} />
 				<Route path="/apartment/:id" element={<Description />} />
-				<Route path="/apartment/:id/detail" element={<DetailAppartement />} />
 			</Routes>
 
 			<Footer />
