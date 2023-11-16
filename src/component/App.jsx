@@ -15,7 +15,6 @@ function App() {
 				<Route path="/about" element={<AboutPage />} />
 				<Route path="/apartment/:id" element={<Description />} />
 			</Routes>
-
 			<Footer />
 		</Router>
 	);

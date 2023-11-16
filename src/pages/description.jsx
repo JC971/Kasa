@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import products from "../data/products.json";
-import { useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "../styles/description.scss";
 import RatingStars from "../component/Stars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,10 +14,10 @@ const Description = () => {
 	const [showEquipments, setShowEquipments] = useState(false);
 	const [showDescription, setShowDescription] = useState(false);
 
-	//Image actuelle de home
+	// Image actuelle de home
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-	if (!apartment) return <ApartmentNotFound/>;
+	if (!apartment) return <ApartmentNotFound />;
 
 	// Image précédente
 	const handlePreviousImage = () => {
@@ -72,11 +72,11 @@ const Description = () => {
 								))}
 						</div>
 						<RatingStars rating={apartment.rating} />
-
-						
+					</div>
+					<div className="buttons-container">
+						<div className="description-btn-container">
 							<button
-							
-								className={`descriptionBtn`}
+								className="descriptionBtn"
 								onClick={() => setShowDescription(!showDescription)}
 							>
 								Description
@@ -84,13 +84,13 @@ const Description = () => {
 									<FontAwesomeIcon icon={faChevronUp} />
 								</span>
 							</button>
-
 							{showDescription && (
 								<div className="description-text">{apartment.description}</div>
 							)}
-
+						</div>
+						<div className="equipment-btn-container">
 							<button
-								className={`equipementBtn `}
+								className="equipementBtn"
 								onClick={() => setShowEquipments(!showEquipments)}
 							>
 								Equipement
@@ -109,7 +109,7 @@ const Description = () => {
 					</div>
 				</div>
 			</div>
-	
+		</div>
 	);
 };
 
