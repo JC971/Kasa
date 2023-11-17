@@ -11,11 +11,12 @@
 	overflow: hidden;
 
 	.description {
-		margin: 0 auto 20px;
+		margin: 0 auto 30px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 	}
+
 	.buttons-container {
 		display: flex;
 		flex-direction: row;
@@ -24,7 +25,7 @@
 		align-items: stretch;
 		align-content: stretch;
 		margin-bottom: 40px;
-		margin-top: 20px;
+		//margin-top: 20px;
 	}
 	.descriptionBtn,
 	.equipementBtn {
@@ -75,7 +76,7 @@
 	.description-text {
 		box-sizing: border-box;
 		font-weight: 500;
-		padding: 10px 20px 20px 20px ;
+		padding: 10px 20px 20px 20px;
 		line-height: 26px;
 	}
 
@@ -83,15 +84,14 @@
 		font-weight: 500;
 		list-style-type: none;
 		padding-left: 20px;
-		
 	}
 
-	.equipments-list li{
+	.equipments-list li {
 		width: 97%;
 		padding-top: 10px;
 		line-height: 16px;
 	}
-	
+
 	.description-image {
 		width: 100%;
 	}
@@ -103,16 +103,18 @@
 		margin-top: 40px;
 		margin-bottom: 20px;
 		width: 100%;
-		
 	}
 
 	.description-text .image-container {
 		margin-left: auto;
 		margin-right: auto;
 		width: 100%;
+		border: solid red 5px;
 	}
+
 	.description-container.image-container img {
 		max-width: 100%;
+		
 	}
 }
 
@@ -200,20 +202,6 @@
 		}
 	}
 
-
-
-
-	.icon {
-		position: absolute;
-		right: 10px;
-		top: 50%;
-		transform: translateY(-50%);
-		transition: transform 0.5s ease;
-	}
-
-	.icon.rotated {
-		transform: translateY(-50%) rotate(180deg);
-	}
 }
 
 @media screen and (max-width: 1000px) {
@@ -303,37 +291,36 @@
 }
 
 @media screen and (max-width: 425px) {
+	.description-container .description{
+		margin-bottom: 0;
+	}
 	.description-container .description-image img {
 		height: 255px;
 		margin: 0;
 	}
-	.description-container .buttons-container{
+	.description-container .buttons-container {
 		display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: stretch;
-	align-content: stretch;
-	gap: 10px;
-	max-width: 425px;
-	
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: stretch;
+		align-content: stretch;
+		gap: 10px;
+		max-width: 425px;
 	}
-		.description-container .description-btn-container{
-			width:100%;
-		}
+	.description-container .description-btn-container {
+		width: 100%;
+	}
 
 	.description-container .equipment-btn-container {
-		width:100%;
-		
-	
+		width: 100%;
 	}
 
-	.description-container .description-text{
+	.description-container .description-text {
 		padding-bottom: 20px;
 	}
 
-	.description-container .equipments-list{
+	.description-container .equipments-list {
 		padding-bottom: 30px;
 	}
-
 }

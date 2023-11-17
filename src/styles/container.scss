@@ -67,7 +67,6 @@
 	}
 
 	@media screen and (max-width: 768px) {
-		
 		.prod .container .card img {
 			height: 290px;
 		}
@@ -76,17 +75,20 @@
 		.prod .container .card {
 			width: 80%;
 		}
-		.prod .container .card img{
+		.prod .container .card img {
 			height: 330px;
-			
 		}
-
 	}
 
 	@media screen and (max-width: 375px) {
-		.prod .container .card img{
+		.prod .container .card img {
 			height: 204px;
-			
+		}
+		.prod .container .card {
+			width: 100%;
+		}
+		.prod .container .card img {
+			height: 251px;
 		}
 	}
 }

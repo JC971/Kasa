@@ -13,23 +13,16 @@
 	font-size: 34px;
 	color: white;
 
+	.fa-chevron-right,
+	.fa-chevron-left {
+		color: white;
+	}
+
+	.fa-chevron-right {
+		padding-right: 10px;
+	}
 	
-
-.fa-chevron-right,
-.fa-chevron-left {
-	color: white;
-
+	.fa-chevron-left {
+		padding-left: 10px;
+	}
 }
-.fa-chevron-right{
-	padding-right: 10px;
-}
-.fa-chevron-left {
-	padding-left: 10px;
-}
-   
-}
-
-
-
-
-
