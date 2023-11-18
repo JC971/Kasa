@@ -24,7 +24,7 @@ $back-color: #f6f6f6;
 		gap: 30px;
 		margin: 0 0 20px 0;
 	}
-
+//largeur des boutons fiab respec...
 	.button-container__texte {
 		width: 71.5%;
 	}
@@ -42,7 +42,7 @@ $back-color: #f6f6f6;
 	button {
 		@include button-styles;
 	}
-
+//position absolute / button
 	.icon {
 		position: absolute;
 		right: 10px;

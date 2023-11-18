@@ -8,7 +8,6 @@ import newImage from "../assets/banner2.jpg";
 function Header() {
 	const location = useLocation();
 
-
 	const displayImage = location.pathname === "/About" ? newImage : image;
 
 	return (

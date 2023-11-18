@@ -114,7 +114,6 @@
 
 	.description-container.image-container img {
 		max-width: 100%;
-		
 	}
 }
 
@@ -183,7 +182,6 @@
 	.button-container {
 		grid-auto-flow: column;
 		display: grid;
-		//width: 480px;
 		grid-row: 3;
 		grid-column: 1/3;
 		margin: 20px 0;
@@ -201,7 +199,6 @@
 			width: fit-content;
 		}
 	}
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -227,6 +224,7 @@
 	.localisation h2 {
 		font-size: 18px;
 		grid-column: 1/6;
+		line-height: 1.5em;
 	}
 
 	.localisation .stars-container {
@@ -238,33 +236,16 @@
 	}
 	.localisation .button-container {
 		grid-column: 1/6;
+		margin: 10px 0 15px 0;
+		.button-top {
+			font-size: 10px;
+			font-weight: 500;
+		}
 	}
 	.localisation .stars-container {
 		grid-row: 4;
 		grid-column: 1;
 	}
-	/*
-	.localisation .descriptionBtn {
-		grid-column: 1/6;
-		grid-row: 7;
-		margin: 10px 0 0 0;
-	}
-	.localisation .description-text {
-		grid-row: 8;
-		grid-column: 1/6;
-		padding: 0;
-	}
-	.localisation .equipementBtn {
-		grid-column: 1/6;
-		grid-row: 9;
-		margin-top: 10px;
-	}*/
-	/*
-	.localisation .equipments-list {
-		grid-row: 10;
-		grid-column: 1/6;
-		padding-left: 0;
-	}*/
 
 	.localisation .host-image {
 		grid-column: 5;
@@ -291,7 +272,7 @@
 }
 
 @media screen and (max-width: 425px) {
-	.description-container .description{
+	.description-container .description {
 		margin-bottom: 0;
 	}
 	.description-container .description-image img {
@@ -307,9 +288,20 @@
 		align-content: stretch;
 		gap: 10px;
 		max-width: 425px;
+		margin-top: 20px;
 	}
 	.description-container .description-btn-container {
 		width: 100%;
+	}
+	.description-container .descriptionBtn {
+		font-size: 13px;
+		font-weight: 500;
+		height: 30px;
+	}
+	.equipment-btn-container .equipementBtn {
+		font-size: 13px;
+		font-weight: 500;
+		height: 30px;
 	}
 
 	.description-container .equipment-btn-container {
@@ -318,9 +310,13 @@
 
 	.description-container .description-text {
 		padding-bottom: 20px;
+		font-size: 12px;
 	}
 
 	.description-container .equipments-list {
 		padding-bottom: 30px;
+	}
+	.description-container .equipments-list li {
+		font-size: 12px;
 	}
 }
