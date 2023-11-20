@@ -1,4 +1,4 @@
-import ProductList from "../component/products";
+import ProductList from "../component/ProductList";
 
 function HomePage() {
 	return (

@@ -3,21 +3,15 @@ import products from "../data/products.json";
 import { useParams } from "react-router-dom";
 import "../styles/description.scss";
 import RatingStars from "../component/Stars";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import ChevronIcon from "../component/ChevronIcon";
-import ApartmentNotFound from "../component/OpsHeader";
+import { Collapse } from "../component/Collapse";
 
 const Description = () => {
 	const { id } = useParams();
 	const apartment = products.find((ap) => ap.id.toString() === id);
-	const [showEquipments, setShowEquipments] = useState(false);
-	const [showDescription, setShowDescription] = useState(false);
 
 	// Image actuelle de home
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-	if (!apartment) return <ApartmentNotFound />;
 
 	// Image précédente
 	const handlePreviousImage = () => {
@@ -74,38 +68,16 @@ const Description = () => {
 						<RatingStars rating={apartment.rating} />
 					</div>
 					<div className="buttons-container">
-						<div className="description-btn-container">
-							<button
-								className="descriptionBtn"
-								onClick={() => setShowDescription(!showDescription)}
-							>
-								Description
-								<span className={`icon ${showDescription ? "rotated" : ""}`}>
-									<FontAwesomeIcon icon={faChevronUp} />
-								</span>
-							</button>
-							{showDescription && (
-								<div className="description-text">{apartment.description}</div>
-							)}
-						</div>
-						<div className="equipment-btn-container">
-							<button
-								className="equipementBtn"
-								onClick={() => setShowEquipments(!showEquipments)}
-							>
-								Equipement
-								<span className={`icon ${showEquipments ? "rotated" : ""}`}>
-									<FontAwesomeIcon icon={faChevronUp} />
-								</span>
-							</button>
-							{showEquipments && (
-								<ul className="equipments-list">
-									{apartment.equipments.map((equipment, index) => (
-										<li key={index}>{equipment}</li>
-									))}
-								</ul>
-							)}
-						</div>
+						<Collapse title="Description">
+							<div className="description-text">{apartment.description}</div>
+						</Collapse>
+						<Collapse title="Equipement">
+							<ul className="equipments-list">
+								{apartment.equipments.map((equipment, index) => (
+									<li key={index}>{equipment}</li>
+								))}
+							</ul>
+						</Collapse>
 					</div>
 				</div>
 			</div>
