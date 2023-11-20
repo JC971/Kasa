@@ -16,14 +16,23 @@ body {
 }
 
 .nav-container {
-	max-width: 86%;
-	margin-left: auto;
-	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+	max-width: 1440px;
+
 
 	.header-container {
 		width: 100%;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		align-content: stretch;
 	}
 
 	.nav {
@@ -31,10 +40,12 @@ body {
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: space-between;
-		align-items: center;
+		align-items: stretch;
 		align-content: stretch;
 		margin-top: 20px;
-		max-width: 1240px;
+		width: 86%;
+		
+
 		a {
 			text-decoration: none;
 		}
@@ -64,9 +75,11 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		
 	}
 	.image-container {
 		position: relative;
+		width: 86%;
 	}
 	//Texte dans image accueil
 	.textImage {
@@ -79,7 +92,7 @@ body {
 		padding: 5px;
 		font-size: 48px;
 		font-weight: 500;
-		width: 100%;
+		width: 86%;
 		text-align: center;
 	}
 }
@@ -111,8 +124,8 @@ body {
 @media screen and (max-width: 375px) {
 	.entoure img {
 		width: 80px;
-		
 	}
+
 	.nav-container .nav ul li a {
 		font-size: 12px;
 	}
@@ -130,7 +143,5 @@ body {
 	.nav-container .header-banner {
 		height: 111px;
 	}
-	.header-container {
-		width: 100%;
-	}
+
 }

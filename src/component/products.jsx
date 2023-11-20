@@ -3,7 +3,6 @@ import products from "../data/products.json";
 import "../styles/container.scss";
 import { Link } from "react-router-dom";
 
-
 function ProductList() {
 	return (
 		<div className="container">

@@ -1,4 +1,3 @@
-
 import "../styles/header.scss";
 import image from "../assets/banner.png";
 import logo from "../assets/logo.svg";
@@ -41,5 +40,3 @@ function Header() {
 }
 
 export default Header;
-
-

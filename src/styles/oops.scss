@@ -12,39 +12,46 @@
 		font-size: 288px;
 		margin: 90px 0;
 	}
+
 	.oops {
 		font-weight: 500;
 		font-size: 36px;
 		margin: 0 0 90px 0;
 	}
+
 	.broken-link {
 		margin: 0 0 90px 0;
 	}
+
 	.broken-link a {
 		color: #ff6060;
 		font-weight: 500;
 		font-size: 18px;
 	}
 }
+
 @media screen and (max-width: 768px) {
-    .not-found .erreur-page {
+	.not-found .erreur-page {
 		font-weight: 700;
 		font-size: 250px;
 		margin: 90px 0;
 	}
-    .not-found .oops {
+
+	.not-found .oops {
 		font-size: 28px;
 		text-align: center;
 	}
 }
+
 @media screen and (max-width: 425px) {
-    .not-found .erreur-page {
+	.not-found .erreur-page {
 		font-weight: 700;
 		font-size: 100px;
 		margin: 90px 0;
 	}
-    .not-found .oops {
-		font-size: 28px;
+
+	.not-found .oops {
+		font-size: 24px;
 		text-align: center;
 	}
 }
@@ -53,8 +60,12 @@
 	.not-found .erreur-page {
 		font-size: 96px;
 	}
+
 	.not-found .oops {
 		font-size: 18px;
 		text-align: center;
+	}
+	.not-found .broken-link a{
+		font-size: 14px;
 	}
 }
