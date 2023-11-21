@@ -262,6 +262,15 @@
 
 //////////////////////////////////////////////////////////////
 
+@media screen and (max-width: 768px) {
+	.description-container .buttons-container {
+    flex-direction: column;
+  }
+.description-container .equipments-list{
+	padding-bottom: 20px;
+}
+}
+
 @media screen and (max-width: 630px) {
 	.description-container .description-image img {
 		height: 300px;

@@ -5,6 +5,7 @@ import "../styles/description.scss";
 import RatingStars from "../component/Stars";
 import ChevronIcon from "../component/ChevronIcon";
 import { Collapse } from "../component/Collapse";
+import ApartmentNotFound from "../component/ApartmentNotFound.jsx";
 
 const Description = () => {
 	const { id } = useParams();
@@ -12,7 +13,7 @@ const Description = () => {
 
 	// Image actuelle de home
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
+	if (!apartment) return <ApartmentNotFound />;
 	// Image précédente
 	const handlePreviousImage = () => {
 		if (currentImageIndex > 0) {
