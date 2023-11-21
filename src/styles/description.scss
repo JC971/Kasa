@@ -191,7 +191,7 @@
 			background-color: #ff6060;
 			border: none;
 			border-radius: 10px;
-			padding: 2px 20px;
+			padding: 4px 4px;
 			align-items: center;
 			font-size: 14px;
 			color: white;
@@ -214,6 +214,21 @@
 	.localisation .button-container {
 		grid-column: 1/4;
 	}
+}
+
+@media screen and (max-width:768px) {
+	.localisation .tag-container{
+		grid-column: 1/6;
+		
+		
+	}
+
+	.localisation .tag-container .tag-span{
+		font-size: 12px;
+	}
+	
+	
+	
 }
 
 @media screen and (max-width: 425px) {
@@ -267,6 +282,11 @@
 	.description-container .buttons-container {
     flex-direction: column;
   }
+  .description-container .collapse .securiteBtn{
+	height: 30px;
+	font-size: 16px;
+  }
+
 .description-container .equipments-list{
 	padding-bottom: 20px;
 }

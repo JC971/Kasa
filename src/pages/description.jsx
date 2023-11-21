@@ -1,54 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import products from "../data/products.json";
 import { useParams } from "react-router-dom";
 import "../styles/description.scss";
 import RatingStars from "../component/Stars";
-import ChevronIcon from "../component/ChevronIcon";
 import { Collapse } from "../component/Collapse";
 import ApartmentNotFound from "../component/ApartmentNotFound.jsx";
+import { Gallery } from "../component/Gallery.jsx";
 
 const Description = () => {
 	const { id } = useParams();
 	const apartment = products.find((ap) => ap.id.toString() === id);
 
-	// Image actuelle de home
-	const [currentImageIndex, setCurrentImageIndex] = useState(0);
-if (!apartment) return <ApartmentNotFound />;
-	// Image précédente
-	const handlePreviousImage = () => {
-		if (currentImageIndex > 0) {
-			setCurrentImageIndex(currentImageIndex - 1);
-		}
-	};
-
-	// Image suivante
-	const handleNextImage = () => {
-		if (currentImageIndex < apartment.pictures.length - 1) {
-			setCurrentImageIndex(currentImageIndex + 1);
-		} else {
-			setCurrentImageIndex(0);
-		}
-	};
+	if (!apartment) return <ApartmentNotFound />;
 
 	return (
 		<div>
 			<div className="description-container">
 				<div className="description">
 					<div className="description-image">
-						<div className="image-container">
-							<img
-								src={apartment.pictures[currentImageIndex]}
-								alt={apartment.title}
-							/>
-							<ChevronIcon
-								className="centre-icon left-chevron"
-								onClick={handlePreviousImage}
-							/>
-							<ChevronIcon
-								className="centre-icon right-chevron"
-								onClick={handleNextImage}
-							/>
-						</div>
+						<Gallery pictures={apartment.pictures} title={apartment.title} />
 					</div>
 					<div className="localisation">
 						<h2>{apartment.title}</h2>
@@ -61,8 +31,9 @@ if (!apartment) return <ApartmentNotFound />;
 							{apartment.tags &&
 								apartment.tags.length > 0 &&
 								apartment.tags.map((tag, index) => (
-									<span key={index} className="tag-span">{tag}</span>
-									
+									<span key={index} className="tag-span">
+										{tag}
+									</span>
 								))}
 						</div>
 						<RatingStars rating={apartment.rating} />

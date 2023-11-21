@@ -1,0 +1,26 @@
+.gallery {
+  width: 100%;
+  position: relative;
+
+  img {
+    height: 415px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .description-container .gallery img {
+    height: 300px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .description-container .gallery img {
+    height: 255px;
+    margin: 0;
+  }
+}
