@@ -13,7 +13,7 @@ const Description = () => {
 
 	// Image actuelle de home
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
-	if (!apartment) return <ApartmentNotFound />;
+if (!apartment) return <ApartmentNotFound />;
 	// Image précédente
 	const handlePreviousImage = () => {
 		if (currentImageIndex > 0) {
@@ -57,13 +57,12 @@ const Description = () => {
 							<img src={apartment.host.picture} alt={apartment.host.name} />
 						</div>
 						<p>{apartment.location}</p>
-						<div className="button-container">
+						<div className="tag-container">
 							{apartment.tags &&
 								apartment.tags.length > 0 &&
 								apartment.tags.map((tag, index) => (
-									<button key={index} className="button-top">
-										{tag}
-									</button>
+									<span key={index} className="tag-span">{tag}</span>
+									
 								))}
 						</div>
 						<RatingStars rating={apartment.rating} />
