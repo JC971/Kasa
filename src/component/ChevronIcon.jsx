@@ -8,7 +8,7 @@ import "../styles/chevronIcon.scss";
 
 const ChevronIcon = ({ onLeftClick, onRightClick }) => {
 	return (
-		<div className="image-with-chevrons" >
+		<div className="image-with-chevrons">
 			<span className="chevron left-chevron" onClick={onLeftClick}>
 				<FontAwesomeIcon icon={faChevronLeft} />
 			</span>
@@ -17,6 +17,6 @@ const ChevronIcon = ({ onLeftClick, onRightClick }) => {
 			</span>
 		</div>
 	);
-}; 
+};
 
 export default ChevronIcon;

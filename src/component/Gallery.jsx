@@ -9,16 +9,16 @@ export const Gallery = ({ pictures, title }) => {
 		if (currentImageIndex > 0) {
 			setCurrentImageIndex(currentImageIndex - 1);
 		} else {
-			setCurrentImageIndex(pictures.length - 1); 
-		}  
+			setCurrentImageIndex(pictures.length - 1);
+		}
 	};
-	
+
 	const handleNextImage = () => {
 		if (currentImageIndex < pictures.length - 1) {
 			setCurrentImageIndex(currentImageIndex + 1);
 		} else {
 			setCurrentImageIndex(0);
-		} 
+		}
 	};
 
 	return (
@@ -30,9 +30,9 @@ export const Gallery = ({ pictures, title }) => {
 					onRightClick={handleNextImage}
 				/>
 
-				<p className="image-counter">
+				<div className="image-counter">
 					{currentImageIndex + 1} / {pictures.length}
-				</p>
+				</div>
 			</div>
 		</div>
 	);

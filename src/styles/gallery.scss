@@ -1,9 +1,7 @@
 .gallery {
 	width: 100%;
 	position: relative;
-	.gallery__content {
-		border: solid green 2px;
-	}
+
 	img {
 		height: 415px;
 		object-fit: cover;
@@ -12,7 +10,7 @@
 		margin-bottom: 20px;
 		width: 100%;
 	}
-	p {
+	.image-counter {
 		position: absolute;
 		top: 80%;
 		left: 50%;
