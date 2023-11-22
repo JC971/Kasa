@@ -10,6 +10,9 @@
     margin-bottom: 20px;
     width: 100%;
   }
+  p{
+    border: solid red 5px;
+  }
 }
 @media screen and (max-width: 630px) {
   .description-container .gallery img {

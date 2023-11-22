@@ -31,6 +31,9 @@ export const Gallery = ({ pictures, title }) => {
 					className="centre-icon right-chevron"
 					onClick={handleNextImage}
 				/>
+				<p className="counter">
+					{currentImageIndex + 1} / {pictures.length}
+				</p>
 			</div>
 		</div>
 	);
