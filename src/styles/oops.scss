@@ -30,15 +30,23 @@
 	}
 }
 
+@media screen and (max-width: 1024px) {
+	.not-found .erreur-page {
+		font-weight: 700;
+		font-size: 200px;
+		margin: 90px 0;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.not-found .erreur-page {
 		font-weight: 700;
-		font-size: 250px;
+		font-size: 150px;
 		margin: 90px 0;
 	}
 
 	.not-found .oops {
-		font-size: 28px;
+		font-size: 24px;
 		text-align: center;
 	}
 }
@@ -51,7 +59,7 @@
 	}
 
 	.not-found .oops {
-		font-size: 24px;
+		font-size: 14px;
 		text-align: center;
 	}
 }
@@ -65,7 +73,9 @@
 		font-size: 18px;
 		text-align: center;
 	}
+
 	.not-found .broken-link a{
 		font-size: 14px;
+		
 	}
 }

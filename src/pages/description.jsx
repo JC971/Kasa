@@ -4,14 +4,21 @@ import { useParams } from "react-router-dom";
 import "../styles/description.scss";
 import RatingStars from "../component/Stars";
 import { Collapse } from "../component/Collapse";
-import ApartmentNotFound from "../component/ApartmentNotFound.jsx";
 import { Gallery } from "../component/Gallery.jsx";
+import { useNavigate } from "react-router-dom";
 
 const Description = () => {
 	const { id } = useParams();
 	const apartment = products.find((ap) => ap.id.toString() === id);
+	const navigate = useNavigate();
+	
+	React.useEffect(() => {
+		if (!apartment) {
+			navigate("/not-found"); 
+		}
+	});
 
-	if (!apartment) return <ApartmentNotFound />;
+	if (!apartment) return null; 
 
 	return (
 		<div>

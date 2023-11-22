@@ -22,9 +22,7 @@ body {
 	justify-content: space-between;
 	align-items: stretch;
 	align-content: stretch;
-	max-width: 1440px;
-
-
+	
 	.header-container {
 		width: 100%;
 		display: flex;
@@ -45,7 +43,6 @@ body {
 		margin-top: 20px;
 		width: 86%;
 		
-
 		a {
 			text-decoration: none;
 		}
@@ -96,12 +93,12 @@ body {
 		text-align: center;
 	}
 }
+
 @media screen and (max-width: 768px) {
 	.nav-container .textImage{
 		font-size: 38px;
 	}
 }
-
 
 @media screen and (max-width: 678px) {
 	.entoure img {
