@@ -8,15 +8,17 @@ export const Gallery = ({ pictures, title }) => {
 	const handlePreviousImage = () => {
 		if (currentImageIndex > 0) {
 			setCurrentImageIndex(currentImageIndex - 1);
-		}
+		} else {
+			setCurrentImageIndex(pictures.length - 1); 
+		}  
 	};
-
+	
 	const handleNextImage = () => {
 		if (currentImageIndex < pictures.length - 1) {
 			setCurrentImageIndex(currentImageIndex + 1);
 		} else {
 			setCurrentImageIndex(0);
-		}
+		} 
 	};
 
 	return (
@@ -24,14 +26,11 @@ export const Gallery = ({ pictures, title }) => {
 			<div className="gallery__content">
 				<img src={pictures[currentImageIndex]} alt={title} />
 				<ChevronIcon
-					className="centre-icon left-chevron"
-					onClick={handlePreviousImage}
+					onLeftClick={handlePreviousImage}
+					onRightClick={handleNextImage}
 				/>
-				<ChevronIcon
-					className="centre-icon right-chevron"
-					onClick={handleNextImage}
-				/>
-				<p className="counter">
+
+				<p className="image-counter">
 					{currentImageIndex + 1} / {pictures.length}
 				</p>
 			</div>

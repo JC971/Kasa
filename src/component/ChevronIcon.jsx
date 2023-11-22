@@ -6,13 +6,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "../styles/chevronIcon.scss";
 
-const ChevronIcon = ({ className, onClick }) => {
+const ChevronIcon = ({ onLeftClick, onRightClick }) => {
 	return (
-		<div className={`image-with-chevrons ${className}`} onClick={onClick}>
-			<span>
+		<div className="image-with-chevrons" >
+			<span className="chevron left-chevron" onClick={onLeftClick}>
 				<FontAwesomeIcon icon={faChevronLeft} />
 			</span>
-			<span>
+			<span className="chevron right-chevron" onClick={onRightClick}>
 				<FontAwesomeIcon icon={faChevronRight} />
 			</span>
 		</div>
